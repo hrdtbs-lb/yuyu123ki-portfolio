@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0px;
+}
+
+.layout-header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 0.5em 1em;
+  border: 1px solid gray;
+}
+
+.menu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
