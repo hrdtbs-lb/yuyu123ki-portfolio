@@ -98,7 +98,7 @@ a {
 }
 
 article img {
-  display: 
+  display: flex;
   margin: 40px;
   text-align: center;
 }
