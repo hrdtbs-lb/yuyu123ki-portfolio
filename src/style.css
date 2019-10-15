@@ -97,9 +97,11 @@ a {
   list-style: none;
 }
 
-article img {
+.gallely-item {
   display: flex;
-  margin: 40px;
+  margin: auto;
+  margin: 50px 70px 0px 70px;
+
   text-align: center;
 }
 
@@ -107,7 +109,7 @@ article img {
 .item-G,
 .item-I {
   display: block;
-  width: 30%;
+  width: 35%;
   border: 1px solid white;
 }
 
