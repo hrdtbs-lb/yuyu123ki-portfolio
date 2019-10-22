@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .transition-sample-2 {
+        display: block;
+        width: 224px;
+        height: 80px;
+        padding: 0;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0.15em;
+        background-color: #76d3f4;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 0px soild #76d3f4;
+      }
+
+      .transition-sample-2:hover {
+        color: #76d3f4;
+        background-color: #fff;
+        border: 10px solid #76d3f4;
+        transition: 0.3s;
+      }
+
+      .transition-sample-3 {
+        width: 224px;
+        height: 80px;
+        margin-top: 50px;
+        background-color: rgb(226, 186, 5);
+        border-radius: 20px;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0.15em;
+        outline: none;
+        text-shadow: 3px 3px 3px gray;
+      }
+
+      .transition-sample-3:hover {
+        color: black;
+        text-shadow: 3px 3px 3px #fff;
+      }
+
+      .transform-sample-1-wrapper {
+        margin-top: 50px;
+      }
+
+      .transform-sample-1 {
+        display: block;
+        width: 224px;
+        height: 80px;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0.15em;
+        background-color: indianred;
+        border-radius: 20px;
+        outline: none;
+        transition: 0.5s;
+      }
+      .transform-sample-1:nth-of-type(1) {
+        transition-timing-function: ease;
+      }
+
+      .transform-sample-1:nth-of-type(2) {
+        transition-timing-function: ease-in;
+      }
+
+      .transform-sample-1:nth-of-type(3) {
+        transition-timing-function: ease-out;
+      }
+
+      .transform-sample-1:nth-of-type(4) {
+        transition-timing-function: ease;
+      }
+
+      .transform-sample-1:nth-of-type(5) {
+        transition-timing-function: ease-out;
+      }
+
+      .transform-sample-1-wrapper:hover > .transform-sample-1 {
+        transform: translate(300px);
+      }
+
+      .transform-sample-2-wrapper {
+        position: relative;
+        width: 250px;
+        height: 250px;
+      }
+
+      .transform-sample-2 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        background-color: rgba(50, 50, 50, 0.3);
+        border: none;
+        border-radius: 50%;
+        transition: 1s;
+      }
+
+      .transform-sample-2:nth-of-type(1) {
+        transition-delay: 0.1s;
+      }
+      .transform-sample-2:nth-of-type(2) {
+        transition-delay: 0.2s;
+      }
+      .transform-sample-2:nth-of-type(3) {
+        transition-delay: 0.3s;
+      }
+      .transform-sample-2:nth-of-type(4) {
+        transition-delay: 0.4s;
+      }
+      .transform-sample-2:nth-of-type(5) {
+        transition-delay: 0.5s;
+      }
+
+      .transform-sample-2-wrapper:hover .transform-sample-2 {
+        transform: scale(5);
+      }
+    </style>
+    <body>
+      <button class="transition-sample-2">Button</button>
+      <button class="transition-sample-3"><a>Button</a></button>
+      <div class="transform-sample-1-wrapper">
+        <button class="transform-sample-1">ease</button>
+        <button class="transform-sample-1">ease-in</button>
+        <button class="transform-sample-1">ease-out</button>
+        <button class="transform-sample-1">ease-in-out</button>
+        <button class="transform-sample-1">linear</button>
+        <div class="transform-sample-2-wrapper">
+          <div class="transform-sample-2"></div>
+          <div class="transform-sample-2"></div>
+          <div class="transform-sample-2"></div>
+          <div class="transform-sample-2"></div>
+          <div class="animation-sample-1-wrapper">
+            <div class="animation-sample-1">X</div>
+            <div class="animation-sample-1">Y</div>
+            <div class="animation-sample-1">Z</div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
