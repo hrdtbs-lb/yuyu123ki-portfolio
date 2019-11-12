@@ -8,31 +8,19 @@
     <!-- @see https://github.com/filipelinhares/ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Jomolhari|Noto+Serif+JP&display=swap&subset=japanese"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Noto+Sans&display=swap");
+    </style>
   </head>
   <body>
     <header class="layout-header">
       <h1 class="logo">Logo</h1>
       <nav class="header-menu">
         <ul>
-          <li class="list-item"><a href="#">Home</a></li>
-          <li class="list-item"><a href="Illust.html">Gallely</a></li>
-          <nav class="gallely-hamburger">
-            <ul>
-              <li><a href="#">Web</a></li>
-              <li><a href="#">Graphic</a></li>
-              <li><a href="#">Illust</a></li>
-            </ul>
-          </nav>
+          <li class="list-item"><a href="index.html">Home</a></li>
+          <li class="list-item"><a href="#gallely">Gallely</a></li>
           <li class="list-item"><a href="#">About</a></li>
-          <li class="list-item"><a href="#">Contact</a></li>
+          <li class="list-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -40,25 +28,50 @@
       <article>
         <img src="./img/top.jpg" alt="" class="top-picture" />
         <section>
-          <h2>Gallely： <br />作品一覧</h2>
+          <h2><a name="gallely">Gallely</a></h2>
           <div class="gallely-item">
-            <div class="item-W">
-              <a href=""><img src="./img/W.jpg" alt=""/></a>
-              <div>Web <br />ウェブデザイン</div>
+            <div class="item">
+              <a href="gallely-a.html"
+                ><img src="./img/20190204 1.jpg" alt=""
+              /></a>
             </div>
-            <div class="item-G">
-              <a href=""><img src="./img/G.jpg" alt=""/></a>
-              <div>Graphic <br />グラフィックデザイン</div>
+            <div class="item">
+              <a href="gallely-b.html"
+                ><img src="./img/20190821 1.jpg" alt=""
+              /></a>
             </div>
-            <div class="item-I">
-              <a href=""><img src="./img/I.jpg" alt=""/></a>
-              <div>Illust <br />イラストレーション</div>
+            <div class="item">
+              <a href="gallely-c.html"><img src="./img/模写２.jpg" alt=""/></a>
             </div>
           </div>
         </section>
         <section>
-          <h2>About <br /></h2>
+          <h2>About</h2>
+          <p>
+            1999年1月15日生まれ <br />大阪芸術大学
+            <br />デザイン学科　グラフィックデザインコース
+          </p>
           <img src="" alt="" />
+        </section>
+        <section>
+          <h2><a name="contact">Contact</a></h2>
+          <form action="#">
+            <div>
+              <label for="name">お名前</label>
+              <input type="text" 　name="yourname" />
+            </div>
+            <div>
+              <label for="mail">メールアドレス</label>
+              <input type="email" />
+            </div>
+            <div>
+              <label for="message">お問い合わせ</label>
+              <textarea name="message" id="" cols="60" rows="8"></textarea>
+            </div>
+          </form>
+          <div class="button1">
+            <button>送信</button>
+          </div>
         </section>
       </article>
     </main>

@@ -4,11 +4,6 @@
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-html,
-body {
-  margin: 0px;
-}
-
 header {
   position: absolute;
   z-index: 1;
@@ -38,12 +33,6 @@ header {
   padding: 0.5em 1em;
   margin: 5px;
   font-size: 17px;
-}
-
-h2 {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 a {
@@ -90,78 +79,11 @@ a {
   width: 40%;
 }
 
-.home-main ul {
-  display: flex;
-  margin-left: 30px;
-  list-style: none;
+img {
+  width: 80%;
+  margin-top: 80px;
 }
 
-.gallely-item {
-  display: flex;
-  margin: auto;
-  margin: 50px 70px 0px 70px;
-  text-align: center;
-}
-
-.item {
-  display: block;
-  border: 1px solid white;
-}
-
-.item img {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.item img:hover {
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
-  transform: translateY(-5px);
-}
-
-form {
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 30px;
-  font-size: 13px;
-}
-
-form div {
-  margin-bottom: 30px;
-}
-
-form input,
-textarea {
-  width: 400px;
-  padding: 3px;
-  border: rgb(170, 170, 170) solid 1px;
-}
-
-label {
-  display: inline-block;
-  width: 95px;
-  margin-right: 1px;
-  text-align: right;
-}
-.button1 {
-  text-align: center;
-}
-button {
-  padding: 3px 20px;
-  font-size: 15px;
-  border: solid gray 2px;
-  border-radius: 5px;
-  outline: none;
-}
-
-button:hover {
-  color: white;
-  background-color: blueviolet;
-}
-
-section p {
+.img {
   text-align: center;
 }
